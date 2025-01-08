@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		45A3FCA02D2DF20C008B9D35 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45A3FC9F2D2DF20C008B9D35 /* LLMKit */; };
+		45A3FCA12D2DF24A008B9D35 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45728ACE2D2DE2BC006A3F43 /* LLMKit */; };
+		45A3FCA22D2DF24A008B9D35 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45728AE42D2DE474006A3F43 /* LLMKit */; };
+		45A3FCA32D2DF24A008B9D35 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45BA5A472D2DEF5D006FB2F7 /* LLMKit */; };
+		45A3FCA42D2DF24A008B9D35 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45BA5A4A2D2DF02A006FB2F7 /* LLMKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		45728A9F2D2DDFD1006A3F43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A3FCA42D2DF24A008B9D35 /* LLMKit in Frameworks */,
+				45A3FCA32D2DF24A008B9D35 /* LLMKit in Frameworks */,
+				45A3FCA22D2DF24A008B9D35 /* LLMKit in Frameworks */,
+				45A3FCA12D2DF24A008B9D35 /* LLMKit in Frameworks */,
+				45A3FCA02D2DF20C008B9D35 /* LLMKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +125,11 @@
 			);
 			name = LLMKitExample;
 			packageProductDependencies = (
+				45728ACE2D2DE2BC006A3F43 /* LLMKit */,
+				45728AE42D2DE474006A3F43 /* LLMKit */,
+				45BA5A472D2DEF5D006FB2F7 /* LLMKit */,
+				45BA5A4A2D2DF02A006FB2F7 /* LLMKit */,
+				45A3FC9F2D2DF20C008B9D35 /* LLMKit */,
 			);
 			productName = LLMKitExample;
 			productReference = 45728A8E2D2DDFD0006A3F43 /* LLMKitExample.app */;
@@ -195,6 +213,9 @@
 			);
 			mainGroup = 45728A852D2DDFD0006A3F43;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				45BA5A492D2DF02A006FB2F7 /* XCLocalSwiftPackageReference "../llmkit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 45728A8F2D2DDFD0006A3F43 /* Products */;
 			projectDirPath = "";
@@ -558,6 +579,36 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		45BA5A492D2DF02A006FB2F7 /* XCLocalSwiftPackageReference "../llmkit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../llmkit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45728ACE2D2DE2BC006A3F43 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+		45728AE42D2DE474006A3F43 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+		45A3FC9F2D2DF20C008B9D35 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+		45BA5A472D2DEF5D006FB2F7 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+		45BA5A4A2D2DF02A006FB2F7 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 45728A862D2DDFD0006A3F43 /* Project object */;
 }
