@@ -17,7 +17,7 @@ struct ChatView: View {
     @ObservedObject var bot: Bot
     @State var input = ""
 
-    init?(_ model: LLMKit.Model? = nil) {
+    init?(_ model: ModelMetadata? = nil) {
         if let url = model?.downloadedURL, let template = model?.template {
             bot = Bot(from: url, template: template, maxTokenCount: 200)
             return

@@ -10,7 +10,7 @@ import LLMKit
 import SwiftUI
 
 struct ModelView: View {
-    @Bindable var model: LLMKit.Model
+    @Bindable var model: ModelMetadata
     @State var showDeleteConfirmation = false
 
     var body: some View {
@@ -54,7 +54,7 @@ struct ModelView: View {
 
 @Observable
 class ModelUpdates: NSObject, URLSessionDownloadDelegate {
-    var models: [LLMKit.Model] = []
+    var models: [ModelMetadata] = []
 
     override init() {
         super.init()
@@ -88,8 +88,8 @@ class ModelUpdates: NSObject, URLSessionDownloadDelegate {
 struct ModelsView: View {
     @State var updates = ModelUpdates()
     
-    var models: [LLMKit.Model] = [
-        Model(
+    var models: [ModelMetadata] = [
+        ModelMetadata(
             id: "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
             name: "llama-3.2-1B-Instruct.Q4_K_M.gguf",
             url: "https://huggingface.co/QuantFactory/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct.Q4_K_M.gguf?download=true",
