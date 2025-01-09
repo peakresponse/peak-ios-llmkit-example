@@ -5,12 +5,12 @@
 //  Created by Francis Li on 10/13/24.
 //
 
-import LLM
 import LLMKit
+import LLMKitLlama
 import SwiftUI
 
 struct ModelView: View {
-    @Bindable var model: ModelMetadata
+    @Bindable var model: Model
     @State var showDeleteConfirmation = false
 
     var body: some View {
@@ -54,7 +54,7 @@ struct ModelView: View {
 
 @Observable
 class ModelUpdates: NSObject, URLSessionDownloadDelegate {
-    var models: [ModelMetadata] = []
+    var models: [Model] = []
 
     override init() {
         super.init()
@@ -87,16 +87,6 @@ class ModelUpdates: NSObject, URLSessionDownloadDelegate {
 
 struct ModelsView: View {
     @State var updates = ModelUpdates()
-    
-    var models: [ModelMetadata] = [
-        ModelMetadata(
-            id: "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
-            name: "llama-3.2-1B-Instruct.Q4_K_M.gguf",
-            url: "https://huggingface.co/QuantFactory/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct.Q4_K_M.gguf?download=true",
-            template: .chatML("You are an expert medical secretary."),
-            isDownloaded: false,
-            isDownloading: false)
-    ]
 
     var body: some View {
         NavigationStack {
@@ -132,6 +122,13 @@ struct ModelsView: View {
                 ChatView(model)
             })
             .task {
+                let models: [Model] = [
+                    Model(
+                        id: "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
+                        name: "llama-3.2-1B-Instruct.Q4_K_M.gguf",
+                        template: .llama3("You are an expert medical secretary. Answer in one concise sentence."),
+                        url: "https://huggingface.co/QuantFactory/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct.Q4_K_M.gguf?download=true")
+                ]
                 if let downloaded = try? ModelManager.shared.list() {
                     for url in downloaded {
                         let id = url.lastPathComponent

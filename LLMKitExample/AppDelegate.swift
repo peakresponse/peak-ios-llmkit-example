@@ -6,12 +6,13 @@
 //  Copyright (c) 2024 Francis Li. All rights reserved.
 //
 
-import LLMKit
+import LLMKitLlama
 import UIKit
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        LlamaBot.register()
         return true
     }
 

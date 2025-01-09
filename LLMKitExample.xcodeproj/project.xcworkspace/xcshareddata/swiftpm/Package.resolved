@@ -2,6 +2,24 @@
   "originHash" : "b5db246ebae823798039a19578c32d3cc060f098b094feebc3f7a02c6d8931a8",
   "pins" : [
     {
+      "identity" : "aws-crt-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/awslabs/aws-crt-swift",
+      "state" : {
+        "revision" : "dd17a98750b6182edacd6e8f0c30aa289c472b22",
+        "version" : "0.40.0"
+      }
+    },
+    {
+      "identity" : "aws-sdk-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/awslabs/aws-sdk-swift",
+      "state" : {
+        "revision" : "b1057fe6c4fee34bf3d5f10a4ea13eba87504cdd",
+        "version" : "1.0.73"
+      }
+    },
+    {
       "identity" : "llama.cpp",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ggerganov/llama.cpp/",
@@ -16,6 +34,24 @@
       "state" : {
         "branch" : "pinned",
         "revision" : "48546489c46c8d116a320ad6bc031bbd714fd8c0"
+      }
+    },
+    {
+      "identity" : "smithy-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/smithy-lang/smithy-swift",
+      "state" : {
+        "revision" : "f1ae901fb5a4e1452c5fdc646a57da46c2eb8c9a",
+        "version" : "0.107.0"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log.git",
+      "state" : {
+        "revision" : "96a2f8a0fa41e9e09af4585e2724c4e825410b91",
+        "version" : "1.6.2"
       }
     }
   ],

@@ -5,21 +5,17 @@
 //  Created by Francis Li on 10/15/24.
 //
 
-import LLM
 import LLMKit
 import SwiftUI
-
-class Bot: LLM {
-    
-}
 
 struct ChatView: View {
     @ObservedObject var bot: Bot
     @State var input = ""
 
-    init?(_ model: ModelMetadata? = nil) {
-        if let url = model?.downloadedURL, let template = model?.template {
-            bot = Bot(from: url, template: template, maxTokenCount: 200)
+    init?(_ model: Model? = nil) {
+        if let model, let bot = BotFactory.instantiate(for: model) {
+            self.bot = bot
+            print(bot)
             return
         }
         return nil
