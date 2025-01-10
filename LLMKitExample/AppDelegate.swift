@@ -6,6 +6,8 @@
 //  Copyright (c) 2024 Francis Li. All rights reserved.
 //
 
+import ArkanaKeys
+import LLMKitAWSBedrock
 import LLMKitLlama
 import UIKit
 
@@ -13,6 +15,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         LlamaBot.register()
+        let keys = ArkanaKeys.Global()
+        AWSBedrockBot.configure(region: keys.awsBedrockRegion,
+                                accessKeyId: keys.awsBedrockAccessKeyId,
+                                secretAccessKey: keys.awsBedrockSecretAccessKey)
+        AWSBedrockBot.register()
         return true
     }
 

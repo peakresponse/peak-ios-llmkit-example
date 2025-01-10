@@ -15,7 +15,6 @@ struct ChatView: View {
     init?(_ model: Model? = nil) {
         if let model, let bot = BotFactory.instantiate(for: model) {
             self.bot = bot
-            print(bot)
             return
         }
         return nil

@@ -127,7 +127,12 @@ struct ModelsView: View {
                         id: "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
                         name: "llama-3.2-1B-Instruct.Q4_K_M.gguf",
                         template: .llama3("You are an expert medical secretary. Answer in one concise sentence."),
-                        url: "https://huggingface.co/QuantFactory/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct.Q4_K_M.gguf?download=true")
+                        url: "https://huggingface.co/QuantFactory/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct.Q4_K_M.gguf?download=true"),
+                    Model(type: .awsBedrock,
+                          id: "us.meta.llama3-3-70b-instruct-v1:0",
+                          name: "AWS Bedrock US Meta Llama 3.3 70B Instruct",
+                          template: .llama3("Return JSON only."),
+                          isDownloaded: true)
                 ]
                 if let downloaded = try? ModelManager.shared.list() {
                     for url in downloaded {

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		450600F22D2EFAC6001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45BA5A4A2D2DF02A006FB2F7 /* LLMKit */; };
+		4506011F2D2F6990001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45728ACE2D2DE2BC006A3F43 /* LLMKit */; };
+		450601202D2F6990001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45728AE42D2DE474006A3F43 /* LLMKit */; };
+		450601212D2F6990001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45BA5A472D2DEF5D006FB2F7 /* LLMKit */; };
+		450601222D2F6990001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45A3FC9F2D2DF20C008B9D35 /* LLMKit */; };
+		450601232D2F6990001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45D4ED132D2EF50E007D9769 /* LLMKit */; };
+		450601392D307B45001AE970 /* ArkanaKeys in Frameworks */ = {isa = PBXBuildFile; productRef = 450601382D307B45001AE970 /* ArkanaKeys */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450601232D2F6990001AE970 /* LLMKit in Frameworks */,
+				450601222D2F6990001AE970 /* LLMKit in Frameworks */,
+				450601212D2F6990001AE970 /* LLMKit in Frameworks */,
+				450601392D307B45001AE970 /* ArkanaKeys in Frameworks */,
+				450601202D2F6990001AE970 /* LLMKit in Frameworks */,
+				4506011F2D2F6990001AE970 /* LLMKit in Frameworks */,
 				450600F22D2EFAC6001AE970 /* LLMKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -123,6 +135,7 @@
 				45BA5A4A2D2DF02A006FB2F7 /* LLMKit */,
 				45A3FC9F2D2DF20C008B9D35 /* LLMKit */,
 				45D4ED132D2EF50E007D9769 /* LLMKit */,
+				450601382D307B45001AE970 /* ArkanaKeys */,
 			);
 			productName = LLMKitExample;
 			productReference = 45728A8E2D2DDFD0006A3F43 /* LLMKitExample.app */;
@@ -208,6 +221,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				450601062D2F153C001AE970 /* XCLocalSwiftPackageReference "../llmkit" */,
+				450601372D307B45001AE970 /* XCLocalSwiftPackageReference "ArkanaKeys/ArkanaKeys" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 45728A8F2D2DDFD0006A3F43 /* Products */;
@@ -578,9 +592,17 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ../llmkit;
 		};
+		450601372D307B45001AE970 /* XCLocalSwiftPackageReference "ArkanaKeys/ArkanaKeys" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ArkanaKeys/ArkanaKeys;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		450601382D307B45001AE970 /* ArkanaKeys */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ArkanaKeys;
+		};
 		45728ACE2D2DE2BC006A3F43 /* LLMKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = LLMKit;
