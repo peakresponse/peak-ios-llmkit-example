@@ -15,7 +15,11 @@ struct ModelView: View {
 
     var body: some View {
         HStack {
-            if model.isDownloaded {
+            if model.type != .gguf {
+                Image(systemName: "cloud.circle.fill")
+                    .font(.system(size: 22, weight: .bold))
+                    .frame(width: 28)
+            } else if model.isDownloaded {
                 Image(systemName: "trash.circle.fill")
                     .font(.system(size: 22, weight: .bold))
                     .frame(width: 28)
@@ -93,7 +97,7 @@ struct ModelsView: View {
             List {
                 Section(header: Text("Models")) {
                     ForEach(updates.models) { model in
-                        if model.isDownloaded {
+                        if model.type != .gguf || model.isDownloaded {
                             NavigationLink(value: model.id) {
                                 ModelView(model: model)
                             }
@@ -126,13 +130,12 @@ struct ModelsView: View {
                     Model(
                         id: "Llama-3.2-1B-Instruct.Q4_K_M.gguf",
                         name: "llama-3.2-1B-Instruct.Q4_K_M.gguf",
-                        template: .llama3("You are an expert medical secretary. Answer in one concise sentence."),
+                        template: .llama3("You are an expert medical secretary."),
                         url: "https://huggingface.co/QuantFactory/Llama-3.2-1B-Instruct-GGUF/resolve/main/Llama-3.2-1B-Instruct.Q4_K_M.gguf?download=true"),
                     Model(type: .awsBedrock,
                           id: "us.meta.llama3-3-70b-instruct-v1:0",
                           name: "AWS Bedrock US Meta Llama 3.3 70B Instruct",
-                          template: .llama3("Return JSON only."),
-                          isDownloaded: true)
+                          template: .llama3("You are an expert medical secretary."))
                 ]
                 if let downloaded = try? ModelManager.shared.list() {
                     for url in downloaded {

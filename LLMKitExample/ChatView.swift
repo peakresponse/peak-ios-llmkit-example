@@ -8,12 +8,22 @@
 import LLMKit
 import SwiftUI
 
+func formatChatHistory(_ history: [ChatHistory]) -> String {
+    var output = ""
+    for chat in history {
+        output += "\(chat.role): \(chat.content)\n\n"
+    }
+    return output
+}
+
 struct ChatView: View {
+    let model: Model
     @ObservedObject var bot: Bot
     @State var input = ""
 
     init?(_ model: Model? = nil) {
         if let model, let bot = BotFactory.instantiate(for: model) {
+            self.model = model
             self.bot = bot
             return
         }
@@ -22,17 +32,28 @@ struct ChatView: View {
 
     func respond() {
         Task {
-            await bot.respond(to: input)
+            do {
+                _ = try await bot.respond(to: input, isStreaming: model.isStreaming)
+                print(bot.history)
+                input = ""
+            } catch (let error) {
+                print(error)
+            }
         }
     }
         
     func stop() {
-        bot.stop()
+        if input == "" {
+            bot.reset()
+        } else {
+            bot.interrupt()
+            input = ""
+        }
     }
 
     var body: some View {
         VStack(alignment: .leading) {
-            ScrollView { Text(bot.output).monospaced() }
+            ScrollView { Text(formatChatHistory(bot.history)).monospaced() }
             Spacer()
             HStack {
                 ZStack {
