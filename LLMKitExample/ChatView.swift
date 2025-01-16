@@ -33,8 +33,8 @@ struct ChatView: View {
     func respond() {
         Task {
             do {
-                _ = try await bot.respond(to: input, isStreaming: model.isStreaming)
-                print(bot.history)
+                let output = try await bot.respond(to: input, isStreaming: model.isStreaming)
+                print(output)
                 input = ""
             } catch (let error) {
                 print(error)

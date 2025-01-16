@@ -10,7 +10,7 @@ import LLMKitLlama
 import SwiftUI
 
 struct ModelView: View {
-    @Bindable var model: Model
+    @ObservedObject var model: Model
     @State var showDeleteConfirmation = false
 
     var body: some View {
