@@ -34,7 +34,7 @@ struct ChatView: View {
         Task {
             do {
                 let output = try await bot.respond(to: input, isStreaming: model.isStreaming)
-                print(output)
+                print(output, output.asJSON() as Any)
                 input = ""
             } catch (let error) {
                 print(error)
