@@ -1,13 +1,13 @@
 {
-  "originHash" : "b5db246ebae823798039a19578c32d3cc060f098b094feebc3f7a02c6d8931a8",
+  "originHash" : "4a39c44a3464b071cf48147d8c4592c0835066b8c2ecb3b9deedd82dd59629de",
   "pins" : [
     {
       "identity" : "aws-crt-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/awslabs/aws-crt-swift",
       "state" : {
-        "revision" : "dd17a98750b6182edacd6e8f0c30aa289c472b22",
-        "version" : "0.40.0"
+        "revision" : "5a65eb60edbd080a8a79af813a5bb6e5ff387550",
+        "version" : "0.43.0"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/awslabs/aws-sdk-swift",
       "state" : {
-        "revision" : "b1057fe6c4fee34bf3d5f10a4ea13eba87504cdd",
-        "version" : "1.0.73"
+        "revision" : "e587d4f4dd0290f188023a393f3a78f4d9522be2",
+        "version" : "1.2.5"
       }
     },
     {
@@ -37,12 +37,21 @@
       }
     },
     {
+      "identity" : "peak-ios-llmkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/peakresponse/peak-ios-llmkit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "217e0d4276c607a4dc007aeeb7f5ad7523b456a7"
+      }
+    },
+    {
       "identity" : "smithy-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/smithy-lang/smithy-swift",
       "state" : {
-        "revision" : "f1ae901fb5a4e1452c5fdc646a57da46c2eb8c9a",
-        "version" : "0.107.0"
+        "revision" : "0eda9f03e78dac2fbe516e09ca0ae96d72879c56",
+        "version" : "0.111.0"
       }
     },
     {
