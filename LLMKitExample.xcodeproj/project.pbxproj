@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		450600F22D2EFAC6001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45BA5A4A2D2DF02A006FB2F7 /* LLMKit */; };
+		4506011F2D2F6990001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45728ACE2D2DE2BC006A3F43 /* LLMKit */; };
+		450601202D2F6990001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45728AE42D2DE474006A3F43 /* LLMKit */; };
+		450601212D2F6990001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45BA5A472D2DEF5D006FB2F7 /* LLMKit */; };
+		450601222D2F6990001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45A3FC9F2D2DF20C008B9D35 /* LLMKit */; };
+		450601232D2F6990001AE970 /* LLMKit in Frameworks */ = {isa = PBXBuildFile; productRef = 45D4ED132D2EF50E007D9769 /* LLMKit */; };
+		450601392D307B45001AE970 /* ArkanaKeys in Frameworks */ = {isa = PBXBuildFile; productRef = 450601382D307B45001AE970 /* ArkanaKeys */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		45728A9F2D2DDFD1006A3F43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +62,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450601232D2F6990001AE970 /* LLMKit in Frameworks */,
+				450601222D2F6990001AE970 /* LLMKit in Frameworks */,
+				450601212D2F6990001AE970 /* LLMKit in Frameworks */,
+				450601392D307B45001AE970 /* ArkanaKeys in Frameworks */,
+				450601202D2F6990001AE970 /* LLMKit in Frameworks */,
+				4506011F2D2F6990001AE970 /* LLMKit in Frameworks */,
+				450600F22D2EFAC6001AE970 /* LLMKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +129,13 @@
 			);
 			name = LLMKitExample;
 			packageProductDependencies = (
+				45728ACE2D2DE2BC006A3F43 /* LLMKit */,
+				45728AE42D2DE474006A3F43 /* LLMKit */,
+				45BA5A472D2DEF5D006FB2F7 /* LLMKit */,
+				45BA5A4A2D2DF02A006FB2F7 /* LLMKit */,
+				45A3FC9F2D2DF20C008B9D35 /* LLMKit */,
+				45D4ED132D2EF50E007D9769 /* LLMKit */,
+				450601382D307B45001AE970 /* ArkanaKeys */,
 			);
 			productName = LLMKitExample;
 			productReference = 45728A8E2D2DDFD0006A3F43 /* LLMKitExample.app */;
@@ -195,6 +219,10 @@
 			);
 			mainGroup = 45728A852D2DDFD0006A3F43;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				450601372D307B45001AE970 /* XCLocalSwiftPackageReference "ArkanaKeys/ArkanaKeys" */,
+				4563C9672D4835F0001C9023 /* XCRemoteSwiftPackageReference "peak-ios-llmkit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 45728A8F2D2DDFD0006A3F43 /* Products */;
 			projectDirPath = "";
@@ -558,6 +586,55 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		450601372D307B45001AE970 /* XCLocalSwiftPackageReference "ArkanaKeys/ArkanaKeys" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ArkanaKeys/ArkanaKeys;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4563C9672D4835F0001C9023 /* XCRemoteSwiftPackageReference "peak-ios-llmkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/peakresponse/peak-ios-llmkit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		450601382D307B45001AE970 /* ArkanaKeys */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ArkanaKeys;
+		};
+		45728ACE2D2DE2BC006A3F43 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+		45728AE42D2DE474006A3F43 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+		45A3FC9F2D2DF20C008B9D35 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+		45BA5A472D2DEF5D006FB2F7 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+		45BA5A4A2D2DF02A006FB2F7 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+		45D4ED132D2EF50E007D9769 /* LLMKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LLMKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 45728A862D2DDFD0006A3F43 /* Project object */;
 }
