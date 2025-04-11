@@ -221,7 +221,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				450601372D307B45001AE970 /* XCLocalSwiftPackageReference "ArkanaKeys/ArkanaKeys" */,
-				4563C9672D4835F0001C9023 /* XCRemoteSwiftPackageReference "peak-ios-llmkit" */,
+				451BE07A2DA9C7C8007BC936 /* XCRemoteSwiftPackageReference "peak-ios-llmkit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 45728A8F2D2DDFD0006A3F43 /* Products */;
@@ -595,7 +595,7 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4563C9672D4835F0001C9023 /* XCRemoteSwiftPackageReference "peak-ios-llmkit" */ = {
+		451BE07A2DA9C7C8007BC936 /* XCRemoteSwiftPackageReference "peak-ios-llmkit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/peakresponse/peak-ios-llmkit";
 			requirement = {

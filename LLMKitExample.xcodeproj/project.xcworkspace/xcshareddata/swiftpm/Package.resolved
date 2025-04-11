@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/awslabs/aws-crt-swift",
       "state" : {
-        "revision" : "5a65eb60edbd080a8a79af813a5bb6e5ff387550",
-        "version" : "0.43.0"
+        "revision" : "74d970dde8a0d6b2fe1d8374767ca9793088ce2c",
+        "version" : "0.48.0"
       }
     },
     {
@@ -15,16 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/awslabs/aws-sdk-swift",
       "state" : {
-        "revision" : "e587d4f4dd0290f188023a393f3a78f4d9522be2",
-        "version" : "1.2.5"
-      }
-    },
-    {
-      "identity" : "llama.cpp",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ggerganov/llama.cpp/",
-      "state" : {
-        "revision" : "cda0e4b648dde8fac162b3430b14a99597d3d74f"
+        "revision" : "7f0535a8f562f4903e8aab0422906b589949e94d",
+        "version" : "1.2.58"
       }
     },
     {
@@ -32,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/eastriverlee/LLM.swift",
       "state" : {
-        "branch" : "pinned",
-        "revision" : "48546489c46c8d116a320ad6bc031bbd714fd8c0"
+        "branch" : "main",
+        "revision" : "7584d0736fce6ec032ab357ee63a8e7b00c64d96"
       }
     },
     {
@@ -42,7 +34,7 @@
       "location" : "https://github.com/peakresponse/peak-ios-llmkit",
       "state" : {
         "branch" : "main",
-        "revision" : "217e0d4276c607a4dc007aeeb7f5ad7523b456a7"
+        "revision" : "32793ebf9c4fe237c81c1ac48b6559d5f0003acd"
       }
     },
     {
@@ -50,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/smithy-lang/smithy-swift",
       "state" : {
-        "revision" : "0eda9f03e78dac2fbe516e09ca0ae96d72879c56",
-        "version" : "0.111.0"
+        "revision" : "755367ae4e10004f8b5a94fbfdf3f638a1f225bc",
+        "version" : "0.125.0"
       }
     },
     {
@@ -59,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log.git",
       "state" : {
-        "revision" : "96a2f8a0fa41e9e09af4585e2724c4e825410b91",
-        "version" : "1.6.2"
+        "revision" : "3d8596ed08bd13520157f0355e35caed215ffbfa",
+        "version" : "1.6.3"
       }
     }
   ],
